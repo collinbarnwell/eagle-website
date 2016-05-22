@@ -1,0 +1,192 @@
+$break-small: 499px;
+$break-large: 1000px;
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Noto Serif', serif;
+  color: black;
+  background-size:cover;
+  background-position: center;
+  background-image: url('pics/grinding-wheel-opacity.jpg');
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.internal-link {
+  // text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#grabber {
+  text-align:center;
+  display: table;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Amatic SC', cursive;
+  max-width: 800px;
+}
+
+#grabber-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#chevron-link {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.section {
+  min-height: 100vh;
+  overflow:hidden;
+}
+
+.container {
+  margin: 0px 100px;
+  @media screen and (max-width: $break-small) {
+    margin: 0px 5px;
+  }
+  @media screen and (min-width: $break-large) {
+    margin: 0px auto;
+    max-width: 800px;
+  }
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-header {
+    margin-top: 80px;
+    font-size: 2.5em;
+}
+
+.dark {
+    background-color: black;
+    color: grey;
+}
+
+.light {
+    color: black;
+}
+
+input.text {
+  border: none;
+  width: 100%;
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  opacity: .8;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+textarea {
+  border: none;
+  width: 100%;
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  opacity: .8;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+input.btn {
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Noto Serif', serif;
+  margin-bottom: 20px;
+  border:solid;
+  border-width: 2px;
+  border-color:black;
+  background-color: orange;
+  opacity: .7;
+  padding: 5px;
+  &:hover {
+      opacity: 1;
+  }
+}
+
+.form-container {
+  font-size: 20px;
+  width: 500px;
+  margin: 0px auto;
+}
+
+footer {
+  padding: 10px;
+  font-size: 20px;
+  height: 20px;
+}
+
+#bottom-section {
+  min-height: -moz-calc(100vh - 40px);
+  min-height: -webkit-calc(100vh - 40px);
+  min-height: -o-calc(100vh - 40px);
+  min-height: calc(100vh - 40px);
+  overflow:hidden;
+}
+
+.top-logo {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.pull-right {
+    clear: none;
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.eagle-header {
+    padding: 50px;
+    text-align: justify;
+}
+
+.description-image {
+    clear: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.kiln-image {
+    float: left;
+    margin-right: 50px;
+}
+
+.inventory-image {
+    float: right;
+    margin-left: 50px;
+}
+
+.description-image-section {
+    width: 100%;
+    clear:both;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.team-picture {
+    height: 400px;
+    margin: 50px auto;
+    display: block;
+    border-radius: 5px;
+}
+
+a {
+    color: black;
+}
