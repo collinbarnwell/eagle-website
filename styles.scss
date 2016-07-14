@@ -199,3 +199,22 @@ footer {
 a {
     color: black;
 }
+
+button#contact-us {
+    border: solid;
+    color: black;
+    padding: 30px;
+    background: transparent;
+    background-opacity: 0;
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 50px auto 10px auto;
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+	background: grey;
+	opacity: 0.5;
+    }
+}
