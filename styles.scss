@@ -110,7 +110,7 @@ textarea {
   border-radius: 3px;
 }
 
-input.btn {
+button#submit-btn {
   width: 100%;
   font-size: 20px;
   font-family: 'Noto Serif', serif;
@@ -217,4 +217,9 @@ button#contact-us {
 	background: grey;
 	opacity: 0.5;
     }
+}
+
+.error {
+    border: solid !important;
+    border-color: red !important;
 }
