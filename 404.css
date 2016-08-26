@@ -13,16 +13,16 @@
 }
 
 #homepage-btn {
-    width: 300px;
-  font-size: 20px;
-  font-family: 'Noto Serif', serif;
-  font-weight: bold;
-  margin-bottom: 20px;
-  border: solid;
-  border-width: 2px;
-  border-color: black;
-  background-color: orange;
-  opacity: .7;
-  padding: 5px; }
-  #homepage-btn:hover {
-    opacity: 1; }
+    width: 200px;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-color: black;
+    border: solid;
+    background-color: orange;
+    padding: 5px;
+    text-decoration: none;}
