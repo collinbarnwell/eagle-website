@@ -1,0 +1,28 @@
+#broken-wheel {
+  background-image: url("pics/broken-wheel.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  z-index: -1;
+  font-weight: bold;
+}
+
+#homepage-btn {
+    width: 300px;
+  font-size: 20px;
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: solid;
+  border-width: 2px;
+  border-color: black;
+  background-color: orange;
+  opacity: .7;
+  padding: 5px; }
+  #homepage-btn:hover {
+    opacity: 1; }
