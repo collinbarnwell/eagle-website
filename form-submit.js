@@ -27,7 +27,8 @@ $(document).ready(function() {
       var url = 'https://docs.google.com/forms/d/e/1FAIpQLSdbE-9RkTKMs_KK3LhVGVRgUO1r5ulKSnpnXfhUnmlBXeetCg/formResponse?entry.1802749419=' + name + '&entry.296139361=' + email + '&entry.458868807=' + msg;
 
       var successCallback = function() {
-	$('form').replaceWith('<p>Thank you! We will reach out to you very soon with a response.</p>');
+	  $('form').replaceWith('<p>Thank you! We will reach out to you very soon with a response.</p>');
+	  ga('send', 'event', 'Contact Form', 'Submitted with a message and without errors.');
       }
 
       $.ajax({
@@ -36,10 +37,12 @@ $(document).ready(function() {
 	dataType: 'text json',
 	success: successCallback,
 	error: function (resp) {
-	  if (resp.status == 0)
-	    successCallback();
+	    if (resp.status == 0)
+		successCallback();
 	}
       });
+    } else {
+	ga('send', 'event', 'Contact Form', 'Submit button was hit, but there are errors.');
     }
 
   });
