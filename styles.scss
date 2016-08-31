@@ -30,7 +30,6 @@ p {
 }
 
 .internal-link {
-  // text-decoration: none;
   color: black;
   font-weight: bold;
 }
@@ -63,12 +62,11 @@ p {
     margin: 0px auto;
     max-width: 800px;
   }
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 80px 0 0 50px 0;
 }
 
 .section-header {
-    margin-top: 80px;
+    /* margin-top: 80px; */
     font-size: 2.5em;
 }
 
@@ -108,15 +106,14 @@ button#submit-btn {
   font-size: 20px;
   font-family: 'Noto Serif', serif;
   margin-bottom: 20px;
-  border:solid;
+  border:none;
   border-width: 2px;
   border-color:black;
   padding: 5px;
   background-color: orange;
-  opacity: 0.8;
+  color: black;
   &:hover {
-      opacity: 1.0;
-      background-color: orange;
+      background-color: white;
   }
 }
 
@@ -142,6 +139,7 @@ footer {
 
 .top-logo {
     width: 100%;
+    margin-top: 20px;
 }
 
 .pull-right {
@@ -193,23 +191,27 @@ a {
     color: black;
 }
 
-#contact-us {
-    border: solid;
-    color: black;
-    padding: 30px;
-    background: transparent;
-    background-opacity: 0;
-    font-size: 30px;
+.first-button-link {
+    padding: 20px;
+    font-size: 20px;
     font-family: inherit;
     font-weight: bold;
-    margin: 50px auto 10px auto;
+    margin: 50px 0px 10px 0;
     display: block;
+    width: 40%;
+    height: 70px;
     text-decoration: none;
     text-align: center;
-
+    background: orange;
+    float: left;
     &:hover {
-	background: orange;
+	background: white;
     }
+}
+
+#learn-more {
+    line-height: 70px;
+    margin-left: 10px;
 }
 
 .error {
